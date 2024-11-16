@@ -1,0 +1,254 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    background-color: #f1d9e5;
+}
+header{
+    background-image: url(/img/beautiful-puzzle-background.jpg);
+    width: 100%;
+    height: 100%;
+}
+.banner {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    color: #ec3c94;
+    text-align: center;
+    padding: 100px 20px;
+}
+.banner h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+.banner p {
+    font-size: 1.5rem;
+}
+footer {
+    background-color: #ec3c94;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+.nav-menu ul{
+    list-style: none;
+    text-decoration: none;
+    color: #f1b7d4;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ec3c94;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.nav-menu li{
+    float: left;
+    width: 25%;
+    flex: 1 0 auto;
+    text-align: center;
+}
+
+.nav-menu li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+}
+.nav-menu li a:hover{
+    background: #ef51a0;
+}
+
+.titulo {
+  font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "slnt" 0;
+  font-size: 36px;
+  color: #ef51a0;
+}
+
+/*PRODUCTOS*/
+.producto a {
+    color: rgb(36, 5, 5);
+    text-decoration: none;
+}
+
+.producto a:hover{
+    box-shadow: 3px 3px 8px #817272;
+}
+
+.producto-contenido{
+    padding: 1.4em;
+}
+
+.producto-contenido h2{
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: normal;
+}
+
+.producto-contenido p{
+    font-size: 95%;  /*.95em*/
+}
+
+figure {
+    margin: 0;
+}
+
+#img-producto{
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+
+.centrado{
+    padding: 1em;
+}
+
+/*Flex*/
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.producto {
+    background: hsl(0, 0%, 100%);
+    margin-bottom: 2em;
+    width: 33%;
+}
+/*CONTACTO*/
+
+.formulario{
+    input:focus {
+        border: 2px solid #000;
+        background-color: #e3dbeb;
+      }  
+    padding: 20px 20px 20px 20px;
+}
+
+.boton{
+    border-top: 2px solid #f8d8f4;
+    clear: both;
+    float: none;
+    padding: 1em 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    width: 20%;
+}
+
+.cuadro{
+    padding: 20px;
+    background-color: #f8f8f8 ;
+    border-color: rgb(153, 0, 115);
+    border: 9px groove (internal value);
+    border-radius: 7px;
+    width: 400px;
+}
+
+legend{
+    color: #ef51a0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*RESEÑAS*/
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.item{
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-color: #ec3c94;
+    border: 9px;
+}
+
+.nav-resenas{
+    padding: 1em;
+}
+/*VIDEO*/
+
+.video{
+    padding: 5%;
+}
+/* MAPA */
+.container {
+    display: flex;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.text-section h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.text-section p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.map-section {
+    flex: 1;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Media query*/
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .map-section {
+        height: 300px;
+    }
+}
+
+@media all and (min-width:600px) and (max-width:1023px){
+
+    .formulario {
+        width: 570px;
+        height: 400px;
+        font-style: normal;
+        background-size: cover; 
+        background-position: center;
+    }
+}     
+
+@media all and (max-width: 599px) {
+
+    .formulario{
+        width: 285px;
+        height: 200px;
+        font-style: italic;
+        background-size: cover; 
+        background-position: center;
+    }
+}
