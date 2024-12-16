@@ -26,42 +26,10 @@ header{
 .banner p {
     font-size: 1.5rem;
 }
+
+
 footer {
     background-color: #ec3c94;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-.nav-menu ul{
-    list-style: none;
-    text-decoration: none;
-    color: #f1b7d4;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ec3c94;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.nav-menu li{
-    float: left;
-    width: 25%;
-    flex: 1 0 auto;
-    text-align: center;
-}
-
-.nav-menu li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: large;
-}
-.nav-menu li a:hover{
-    background: #ef51a0;
 }
 
 .titulo {
@@ -131,17 +99,6 @@ figure {
         background-color: #e3dbeb;
       }  
     padding: 20px 20px 20px 20px;
-}
-
-.boton{
-    border-top: 2px solid #f8d8f4;
-    clear: both;
-    float: none;
-    padding: 1em 0;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    text-align: center;
-    width: 20%;
 }
 
 .cuadro{
@@ -251,4 +208,70 @@ legend{
         background-size: cover; 
         background-position: center;
     }
+}
+/*Carrito*/
+.Tienda {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.productoTienda {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#carrito {
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+/*
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+}
+button:hover {
+    background-color: #45a049;
+}
+*/
+.agotado {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.descuento {
+    color: green;
+    font-weight: bold;
+}
+#checkout-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+.checkout-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+.tituloh2{
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "slnt" 0;
+    font-size: 24px;
+    color: #ef51a0;
 }
